@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta keywords="Chores"
+		<meta name="description" content="Chore List" />
+		<meta description="Select chores" />
+		<meta name="robots" content="index,follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<title>Chore List Form</title>
+	</head>
+	<body>
+		<h1>Pick Your Chores</h1>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Information</legend>
+				<ul>
+					<li><label for="fname">First Name:</label><input type="text" id="fname" /></li>
+					<li><label for="lname">Last Name:</label><input type="text" id="lname" /></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Anytime Chores</legend>
+					<p>What chores need to be done?:</p>
+						<ul>
+							<li><input type="checkbox" value="Yes" id="Dishes" /><label for="Dishes">Dishes</label></li>
+							<li><input type="checkbox" value="Yes" id="Sweep" /><label for="Sweep">Sweep</label></li>
+							<li><input type="checkbox" value="Yes" id="Bathroom" /><label for="Bathroom">Bathroom</label></li>
+							<li><input type="checkbox" value="Yes" id="Dust" /><label for="Dust">Dust</label></li>
+							<li><input type="checkbox" value="Yes" id="Trash" /><label for="Trash">Trash</label></li> 						
+						</ul>
+			</fieldset>
+			<fieldset>
+				<p>On a scale of 0-10. Where the chores done in a timely manner?</p>
+				<input type="range" min="0" max="10" />
+				<p>If so select reward date!</p>
+				<input type="datetime-local" name="Reward Date">
+			</fieldset>
+			<fieldset>
+				<ul>
+					<li>
+						<label for="reward">Anticipated reward.</label>
+						<select id="reward">
+							<optgroup label="N/A">
+								<option value="N/A">N/A</option>
+							</optgroup>
+							<optgroup label="Toys">
+								<option value="Lego">Lego</option>
+								<option value="Action Figure">Action Figure</option>
+								<option value="Barbie Doll">Barbie Doll</option>
+								<option value="My Little Pony">My Little Pony</option>
+							</optgroup>
+							<optgroup label="Money">
+								<option value="$1">$1</option>
+								<option value="$5">$5</option>
+								<option value="$10">$10</option>
+							</optgroup>
+							<optgroup label="Other">
+								<option value="Other">Other (Fill in "Text Field")</option>
+							</optgroup>
+						</select>
+						<li><label for="comments">Fill in for "Other":</label><textarea id="comments"></textarea></li>
+						<li><input type="hidden" value="true" /></li>
+					</li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="Accept!" /> <input type="reset" value="Clear information!" />
+			<li><a href="index.html">Home</a></li>
+		</form>
+	</body>
+</html>
