@@ -1,0 +1,26 @@
+/*
+
+*/
+html {
+	background: silver;
+	text-align: center;
+}
+
+
+h1 {
+	margin: 15px auto 15px auto;
+	border: 1px solid black;
+	padding: 10px;
+	background: fuchsia;
+	text-align: center;
+	width: 250px;
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+	font-weight: bold; 
+}
+
+a{
+	outline: 1px dotted blue;
+}
+
+a:hover{color: blue;outline: none;}
