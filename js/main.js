@@ -218,7 +218,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 	
-	var RewardsGroup = ["N/A", "N/A", "Toys", "Lego", "Hotwheels", "Barbie Doll", "My Little Pony", "Money", "$1", "$5", "$10"];
+	var RewardsGroup = ["N/A", "N/A", "Toys", "Lego", "Hotwheels", "Barbie Doll", "My Little Pony", "Money", "$1", "$5", "$10", "Other"];
 		errMsg = $('errors');
 		
 	var displayLink = $('displayLink');

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<style type="text/css">
+
+	</style>
 		<meta charset="UTF-8" />
 		<meta keywords="Chores"
 		<meta name="description" content="Chore List" />
@@ -8,16 +11,17 @@
 		<meta name="robots" content="index,follow" />
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
 		<title>Chore List Form</title>
-		<link href="css/styles.css" rel="stylesheet" type="text/css" />	
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<a href="#" id="clear">Clear Stored Data</a>
 		<a href="#" id="displayLink">Displayed Saved Data</a>
-		<a href="addchore.html" id"addNew" style="display:none;">Add New Item</a>
+		<a href="addchore.html" id="addNew" style="display:none;">Add New Item</a>
 		<h1>Pick Your Chores</h1>
-		<form action="#" method="post">
+		<form action="#" method="post" id="contactForm">
 			<fieldset>
 				<legend>Information</legend>
+				<ul id="errors"></ul>
 				<ul>
 					<li><label for="fname">First Name:</label><input type="text" id="fname" /></li>
 					<li><label for="lname">Last Name:</label><input type="text" id="lname" /></li>
@@ -27,24 +31,26 @@
 				<legend>Anytime Chores</legend>
 					<p>To be done:</p>
 						<ul>
-							<li><input type="checkbox" checked value="Dishes" id="Dishes" /><label for="Dishes">Dishes</label></li>
-							<li><input type="checkbox" checked value="Sweep" id="Sweep" /><label for="Sweep">Sweep</label></li>
-							<li><input type="checkbox" checked value="Bathroom" id="Bathroom" /><labelfor="Bathroom">Bathroom</label></li>
-							<li><input type="checkbox" checked value="Dust" id="Dust" /><label for="Dust">Dust</label></li> 
-							<li><input type="checkbox" checked value="Trash" id="Trash" /><label for="Trash">Trash</label></li> 
+							<li><input type="checkbox"  value="Yes" id="Dishes" /><label for="Dishes">Dishes</label></li>
+							<li><input type="checkbox"  value="Yes" id="Sweep" /><label for="Sweep">Sweep</label></li>
+							<li><input type="checkbox"  value="Yes" id="Bathroom" /><label for="Bathroom">Bathroom</label></li>
+							<li><input type="checkbox"  value="Yes" id="Dust" /><label for="Dust">Dust</label></li> 
+							<li><input type="checkbox"  value="Yes" id="Trash" /><label for="Trash">Trash</label></li> 
 						</ul>
 			</fieldset>
 			<fieldset>
-				<ul>
 					<p>On a scale of 0-10. Where the chores done in a timely manner?</p>
-					<li><label for="Rate">Rate</label><input type="range" min="0" max="10" /></li>
+				<ul>
+					<li><label for="Rate">Rate</label><input type="range" id="rate" min="0" max="10" /></li>
+				</ul>
 					<p>If so select reward date!</p>
-					<li><label for="Date">Date Added</label><input type="datetime-local" name="Reward Date">
+				<ul>
+					<li><label for="Date">Date Added</label><input type="datetime-local" id="date" name="Reward Date">
 				</ul>
 			</fieldset>
 			<fieldset>
 				<li>
-					<label for="reward">Anticipated reward.</label>
+					<label for="reward">Anticipated reward:</label>
 					<select id="reward">
 						<optgroup label="N/A">
 							<option value="N/A">N/A</option>
@@ -64,9 +70,9 @@
 					<li><input type="hidden" value="true" /></li>
 				</li>
 			</fieldset>
-			<input type="submit" value="Accept!" id="submit" /> <input type="reset" value="Clear current information!" /> 
+			<input type="button" value="Accept!" id="submit" /> <input type="reset" value="Clear current information!" /> 
 			<li><a href="index.html">Home</a></li>
 		</form>
-		<script src="main.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
 	</body>
 </html>
